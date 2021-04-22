@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\EQUIPO\\.nuget\\packages\\": {}
+    "C:\\Users\\isidr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Archivos de programa (x86)\\Pac-man\\Pac-man\\Pac-man.csproj",
+      "projectUniqueName": "C:\\Pac-man\\Pac-man\\Pac-man\\Pac-man.csproj",
       "projectName": "Pac-man",
-      "projectPath": "D:\\Archivos de programa (x86)\\Pac-man\\Pac-man\\Pac-man.csproj",
-      "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-      "outputPath": "D:\\Archivos de programa (x86)\\Pac-man\\Pac-man\\obj\\",
+      "projectPath": "C:\\Pac-man\\Pac-man\\Pac-man\\Pac-man.csproj",
+      "packagesPath": "C:\\Users\\isidr\\.nuget\\packages\\",
+      "outputPath": "C:\\Pac-man\\Pac-man\\Pac-man\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isidr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
