@@ -24,3 +24,16 @@ C:\Pac-man\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csproj.CoreCompileInp
 C:\Pac-man\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.dll
 C:\Pac-man\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.pdb
 C:\Pac-man\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.genruntimeconfig.cache
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.exe
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.deps.json
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.runtimeconfig.json
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.runtimeconfig.dev.json
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.dll
+D:\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.pdb
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csprojAssemblyReference.cache
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.AssemblyInfoInputs.cache
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.AssemblyInfo.cs
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csproj.CoreCompileInputs.cache
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.dll
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.pdb
+D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.genruntimeconfig.cache
