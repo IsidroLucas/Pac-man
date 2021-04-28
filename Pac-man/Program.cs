@@ -58,6 +58,7 @@ namespace Pac_man
         int lapFantasmas; // tiempo restante para quitar el muro
         int numComida; // numero de casillas restantes con comida o vitamina
         Random rnd; // generador de aleatorios
+
                     // flag para mensajes de depuracion en consola
         private bool Debug = true;
 
@@ -134,10 +135,6 @@ namespace Pac_man
 
             levels = new StreamReader(file);
 
-            //Variables del tamaño del nivel para la creación de "Tablero"
-            int filas = 0;
-            int columnas;
-
             //String auxiliar para la lectura del nive
             string end = "";
             file = "";
@@ -211,7 +208,16 @@ namespace Pac_man
         public Casilla[,] GetTab()
         {
             return cas;
+        } //Por que no funciona esto
+
+        bool Siguiente(Coor pos, Coor dir, Coor newPos)
+        {
+            bool apto = false;
+
+            return apto;
         }
+
+        
     }
 
 
@@ -220,56 +226,36 @@ namespace Pac_man
         static void Main(string[] args)
         {
             string file = "level00.dat";
-            Tablero tab;
 
-            tab = new Tablero(file);
+            Tablero tab = new Tablero(file);
+
+            bool sig = false;
+
+            Coor newPos = new Coor();
 
             while (true)
             {
                 Dibuja(tab);
 
+                sig = Siguiente(tab.pers[0].pos, tab.pers[0].dir, ref newPos, tab);
+
+                MuevePacman(tab/*Temporal*/, newPos);
             }
-            
-            
+           
+
         }
 
-        static void Dibuja(Tablero tab)
+        static void Dibuja(Tablero tab/*Temporal*/)
         {
             for (int row = 0; row < tab.cas.GetLength(0); row++)
             {
                 for (int col = 0; col < tab.cas.GetLength(1); col++)
                 {
-                    if (tab.cas[row, col] == (Tablero.Casilla)1)
+                    if (tab.cas[row, col] == (Tablero.Casilla)0 && row == tab.pers[0].pos.fil && col == tab.pers[0].pos.col)
                     {
-                        Console.BackgroundColor = ConsoleColor.White; 
-                        Console.SetCursorPosition(2 * col, row); 
-                        Console.Write("  "); 
-                    }
-                    else if (tab.cas[row, col] == (Tablero.Casilla)2) 
-                    { 
-                        Console.BackgroundColor = ConsoleColor.DarkGray; 
-                        Console.ForegroundColor = ConsoleColor.White; 
-                        Console.SetCursorPosition(2 * col, row); 
-                        Console.Write(".."); 
-                    }
-                    else if (tab.cas[row, col] == (Tablero.Casilla)3) 
-                    { 
-                        Console.BackgroundColor = ConsoleColor.DarkGray; 
-                        Console.ForegroundColor = ConsoleColor.Green; 
-                        Console.SetCursorPosition(2 * col, row); 
-                        Console.Write("**"); 
-                    }
-                    else if (tab.cas[row, col] == (Tablero.Casilla)4) 
-                    { 
-                        Console.BackgroundColor = ConsoleColor.Blue; 
-                        Console.SetCursorPosition(2 * col, row); 
-                        Console.Write("  "); 
-                    }
-                    else if (tab.cas[row, col] == (Tablero.Casilla)0 && row == tab.pers[0].pos.fil && col == tab.pers[0].pos.col) 
-                    { 
-                        Console.BackgroundColor = ConsoleColor.Yellow; 
-                        Console.SetCursorPosition(2 * col, row); 
-                        Console.Write(">>"); 
+                        Console.BackgroundColor = ConsoleColor.Yellow;
+                        Console.SetCursorPosition(2 * col, row);
+                        Console.Write(">>");
                     }
                     else if (tab.cas[row, col] == (Tablero.Casilla)0 && row == tab.pers[1].pos.fil && col == tab.pers[1].pos.col)
                     {
@@ -295,6 +281,32 @@ namespace Pac_man
                         Console.SetCursorPosition(2 * col, row);
                         Console.Write("ºº");
                     }
+                    else if (tab.cas[row, col] == (Tablero.Casilla)1)
+                    {
+                        Console.BackgroundColor = ConsoleColor.White; 
+                        Console.SetCursorPosition(2 * col, row); 
+                        Console.Write("  "); 
+                    }
+                    else if (tab.cas[row, col] == (Tablero.Casilla)2) 
+                    { 
+                        Console.BackgroundColor = ConsoleColor.DarkGray; 
+                        Console.ForegroundColor = ConsoleColor.White; 
+                        Console.SetCursorPosition(2 * col, row); 
+                        Console.Write(".."); 
+                    }
+                    else if (tab.cas[row, col] == (Tablero.Casilla)3) 
+                    { 
+                        Console.BackgroundColor = ConsoleColor.DarkGray; 
+                        Console.ForegroundColor = ConsoleColor.Green; 
+                        Console.SetCursorPosition(2 * col, row); 
+                        Console.Write("**"); 
+                    }
+                    else if (tab.cas[row, col] == (Tablero.Casilla)4) 
+                    { 
+                        Console.BackgroundColor = ConsoleColor.Blue; 
+                        Console.SetCursorPosition(2 * col, row); 
+                        Console.Write("  "); 
+                    }
                     else if (tab.cas[row, col] == (Tablero.Casilla)0)
                     {
                         Console.BackgroundColor = ConsoleColor.DarkGray;
@@ -306,9 +318,64 @@ namespace Pac_man
             }
         }
 
+        static bool Siguiente(Coor pos, Coor dir, ref Coor newPos, Tablero tab/*Temporal*/)
+        {
+            bool apto = false;
 
+            newPos.col = pos.col;
+            newPos.fil = pos.fil;
 
+            if (dir.fil == 1 && tab.cas[pos.fil + 1, pos.col] != (Tablero.Casilla)1)
+            {
+                apto = true;
+                newPos.fil = pos.fil + 1;
 
-       
+                if (pos.fil == tab.cas.GetLength(1)-1)
+                {
+                    newPos.fil = 0;
+                }
+            }
+            else if (dir.fil == -1 && tab.cas[pos.fil - 1, pos.col] != (Tablero.Casilla)1)
+            {
+                apto = true;
+                newPos.fil = pos.fil - 1;
+
+                if (pos.fil == 0)
+                {
+                    newPos.fil = tab.cas.GetLength(1) - 1;
+                }
+            }
+            else if (dir.col == 1 && tab.cas[pos.fil, pos.col + 1] != (Tablero.Casilla)1)
+            {
+                apto = true;
+                newPos.col = pos.col + 1;
+
+                if (pos.col == tab.cas.GetLength(0) - 1)
+                {
+                    newPos.col = 0;
+                }
+            }
+            else if (dir.col == -1 && tab.cas[pos.fil, pos.col - 1] != (Tablero.Casilla)1)
+            {
+                apto = true;
+                newPos.col = pos.col - 1;
+
+                if (pos.col == 0)
+                {
+                    newPos.col = tab.cas.GetLength(0) - 1;
+                }
+            }
+
+            return apto;
+        }
+
+        static void MuevePacman(Tablero tab/*Temporal*/, Coor newPos)
+        {
+            tab.pers[0].pos.fil = newPos.fil;
+            tab.pers[0].pos.col = newPos.col;
+
+            tab.cas[newPos.fil, newPos.col] = (Tablero.Casilla)0;
+        }
+
     }
 }
