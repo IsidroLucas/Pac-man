@@ -37,3 +37,16 @@ D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csproj.CoreCompileInputs.cach
 D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.dll
 D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.pdb
 D:\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.genruntimeconfig.cache
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.exe
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.deps.json
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.runtimeconfig.json
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.runtimeconfig.dev.json
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.dll
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\bin\Debug\netcoreapp3.1\Pac-man.pdb
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csprojAssemblyReference.cache
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.AssemblyInfoInputs.cache
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.AssemblyInfo.cs
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.csproj.CoreCompileInputs.cache
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.dll
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.pdb
+C:\Users\isidr\OneDrive\Documentos\GitHub\Pac-man\Pac-man\obj\Debug\netcoreapp3.1\Pac-man.genruntimeconfig.cache

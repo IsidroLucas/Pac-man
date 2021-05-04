@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pac-man\\Pac-man\\Pac-man.csproj": {}
+    "C:\\Users\\isidr\\OneDrive\\Documentos\\GitHub\\Pac-man\\Pac-man\\Pac-man.csproj": {}
   },
   "projects": {
-    "D:\\Pac-man\\Pac-man\\Pac-man.csproj": {
+    "C:\\Users\\isidr\\OneDrive\\Documentos\\GitHub\\Pac-man\\Pac-man\\Pac-man.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pac-man\\Pac-man\\Pac-man.csproj",
+        "projectUniqueName": "C:\\Users\\isidr\\OneDrive\\Documentos\\GitHub\\Pac-man\\Pac-man\\Pac-man.csproj",
         "projectName": "Pac-man",
-        "projectPath": "D:\\Pac-man\\Pac-man\\Pac-man.csproj",
-        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-        "outputPath": "D:\\Pac-man\\Pac-man\\obj\\",
+        "projectPath": "C:\\Users\\isidr\\OneDrive\\Documentos\\GitHub\\Pac-man\\Pac-man\\Pac-man.csproj",
+        "packagesPath": "C:\\Users\\isidr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isidr\\OneDrive\\Documentos\\GitHub\\Pac-man\\Pac-man\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isidr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
